@@ -51,3 +51,27 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+function validateInput(textarea) {
+    var regex = /^[a-z\s]*$/; // Expressão regular que permite apenas letras minúsculas e espaços
+    
+    var text = textarea.value.toLowerCase(); // Convertendo o texto para minúsculas
+    var newText = '';
+    
+    // Substituindo acentos por espaços
+    text = text.normalize("NFD").replace(/[\u0300-\u036f]/g, " ");
+    
+    // Verificando cada caractere do texto
+    for (var i = 0; i < text.length; i++) {
+        var char = text.charAt(i);
+        if (regex.test(char)) { // Se o caractere corresponder à expressão regular
+            newText += char;
+        } else if (char === ' ') { // Se o caractere for um espaço, adiciona ao novo texto
+            newText += char;
+        }
+    }
+    
+    // Atualizando o conteúdo do textarea
+    textarea.value = newText;
+}
+
