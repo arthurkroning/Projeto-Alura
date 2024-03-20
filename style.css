@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root {
+    --fonte: font-family: "Inter", sans-serif;
+}
+
+#icone{
+    margin-top: 40px;
+    }
+    
+body {
+background-color: #F3F5FC;
+display: flex;
+flex-direction: row;
+font-family: "Inter", sans-serif;
+}
+
+
+.caixa2 {
+display: flex;
+flex-direction: column;
+height: 62.5em;
+width: 62.5em;
+align-items: center;
+}
+
+#texto {
+background-color: #F3F5FC;
+color: #0A3871;
+width: 70%;
+font-weight: 400;
+font-size: 32px;
+min-height: 3em;
+height: 60%;
+resize: none;
+margin-top: 6.25em;
+border: none;
+}
+
+textarea:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+
+.aviso{
+opacity: 80%;
+font-family: "Inter", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+height: 16px;
+color: #495057;
+margin-top: 100px;
+margin-right: 355px;
+}
+
+.acento {
+width: 16px;
+height: 16px;
+}
+
+
+
+aside {
+width: 400px;
+height: 900px;
+background-color: #FFFFFF;
+margin-right: 40px;
+border-radius: 32px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.texto1{ 
+font-weight: 700;
+size: 24px;
+width: 336px;
+height: 58px;
+color: #343A40;
+text-align: center;
+}
+
+.texto2{
+color: #495057;
+text-align: center;
+font-weight: 400;
+size: 16px;
+line-height: 24px;
+width: 350px;
+word-wrap: break-word;
+}
+
+
+.botao{
+display: flex;
+width: 42.5em;
+height: 20.5em;
+flex-direction: row;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+button{
+border-radius: 24px;
+width: 328px;
+height: 67px;
+font-family: "Inter", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 19.36px;
+}
+
+.cript{
+background-color: #0A3871;
+color: #FFFFFF;
+}
+
+.decript{
+background-color: #D8DFE8;
+color: #0A3871;
+}
+
+.copiar {
+border-radius: 24px;
+background-color: #D8DFE8;
+color: #0A3871;
+width: 328px;
+height: 67px;
+font-family: "Inter", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 19.36px;
+display: none; /* Oculta o botão por padrão */
+    /* Outros estilos conforme necessário */
+}
+  
+
+@media screen and (min-width: 600px) {
+    body {
+      flex-direction: row; /* Direção padrão */
+    }
+  }
+  
+  @media screen and (max-width: 599px) {
+    body {
+      flex-direction: column; /* Altera para column quando a tela é menor */
+      align-items: center;
+    }
+  }
+
