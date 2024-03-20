@@ -56,7 +56,7 @@ function validateInput(textarea) {
     var regex = /^[a-z\s]*$/; // Expressão regular que permite apenas letras minúsculas e espaços
     
     var text = textarea.value.toLowerCase(); // Convertendo o texto para minúsculas
-    var newText = '';
+    var newText = ' ';
     
     // Substituindo acentos por espaços
     text = text.normalize("NFD").replace(/[\u0300-\u036f]/g, " ");

@@ -149,9 +149,25 @@ display: none; /* Oculta o botão por padrão */
   }
   
   @media screen and (max-width: 599px) {
+    #icone{
+      margin-right: 200px;
+    }
     body {
       flex-direction: column; 
       align-items: center;
     }
+    .botao{
+      width: 300px;
+    }
+    #texto{
+      width: 300px;
+    }
+    .aviso{
+      margin-right: 0px;
+    }
+    aside{
+      height: 500px;
+      margin-left: 50px;
+      width: 360px;
+    }
   }
-
