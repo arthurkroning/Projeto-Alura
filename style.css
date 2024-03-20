@@ -139,19 +139,18 @@ font-weight: 400;
 font-size: 16px;
 line-height: 19.36px;
 display: none; /* Oculta o botão por padrão */
-    /* Outros estilos conforme necessário */
 }
   
 
 @media screen and (min-width: 600px) {
     body {
-      flex-direction: row; /* Direção padrão */
+      flex-direction: row; 
     }
   }
   
   @media screen and (max-width: 599px) {
     body {
-      flex-direction: column; /* Altera para column quando a tela é menor */
+      flex-direction: column; 
       align-items: center;
     }
   }
